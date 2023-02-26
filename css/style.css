@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-white: white;
+  --color-gold: rgb(255, 187, 0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--color-white);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 4rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  color: var(--color-gold);
+}
+
+.container {
+  background: url(../images/blackj_background.webp) center / cover;
+  opacity: 0.9;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.container > p {
+  margin-bottom: 2rem;
+}
+
+.container > button {
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background: var(--color-gold);
+  color: white;
+  border: none;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: goldenrod;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
+
+.player__name::placeholder,
+.player__chips::placeholder {
+  font-size: 1.6rem;
+}
+
+.player__name,
+.player__chips {
+  padding: 0.8rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.player__name:focus,
+.player__chips:focus {
+  outline: 0;
+}
+
+.form button {
+  padding: 0.5rem 3rem;
+  border: none;
+  background: rgb(1, 209, 192);
+  font-size: 1.6rem;
+  color: white;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.form button:hover {
+  background: rgb(41, 41, 243);
+}

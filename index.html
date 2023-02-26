@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Blackjack</h1>
+      <form class="form">
+        <input
+          type="text"
+          name="name"
+          class="player__name"
+          placeholder="Player Name"
+          required
+        />
+
+        <input
+          type="text"
+          name="chips"
+          class="player__chips"
+          placeholder="Player Chips"
+          required
+        />
+
+        <button type="submit" class="submit__btn">Enter</button>
+      </form>
+      <p class="message__element">Want to play a round?</p>
+      <p class="card__element">Cards:</p>
+      <p class="sum__element">Sum:</p>
+      <button class="start__game">Start Game</button>
+      <button class="new__card">New Card</button>
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
